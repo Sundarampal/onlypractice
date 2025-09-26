@@ -11,19 +11,11 @@ class _QuizzesState extends State<Quizzes> {
   Widget build(BuildContext context) {
     return MaterialApp (
       home: Scaffold(
-        appBar: AppBar(title: Text('english'),centerTitle: true,),
-        body: Column(crossAxisAlignment: CrossAxisAlignment.stretch, mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-
-               ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("present tense")),
-            SizedBox(height: 20,),
-            ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("past tense")),
-              SizedBox(height: 20,),ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("future tanse")),
-              SizedBox(height: 20,),
-              ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("basic question")),
-
-          ],
-        ),
+        appBar: AppBar(title: Text('english Quizzes'),
+          centerTitle: true),
+      body: Center(
+        child: ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("next quizzes")),
+      ),
       ),
     );
   }

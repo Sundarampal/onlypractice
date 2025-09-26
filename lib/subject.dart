@@ -12,17 +12,8 @@ class _SubjectState extends State<Subject> {
     return MaterialApp (
       home: Scaffold(
         appBar: AppBar(title: Text('maths quizzes'),centerTitle: true),
-        body: Column(mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.stretch,
-
-          children: [
-
-             ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("multiply")),
-             SizedBox(height: 20,),ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("subtraction")),
-            SizedBox(height: 20,),
-            ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("division")),
-
-
-          ],
+        body: Center(
+          child: ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text("next quizzes")),
         ),
       ),
     );

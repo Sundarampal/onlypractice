@@ -13,7 +13,7 @@ class _QuestionState extends State<Question> {
       home: Scaffold(
         appBar: AppBar(title: Text('hindi'),centerTitle: true),
         body: Center(
-          child: ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text('data')),
+          child: ElevatedButton(onPressed: (){Navigator.pushNamed(context, '/fifth');}, child: Text('hindi quizzes')),
         ),
       ),
     );
